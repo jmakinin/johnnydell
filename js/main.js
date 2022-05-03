@@ -336,8 +336,8 @@ $(function () {
 
     const contactForm = $("#contact-us-form"),
         userName = $("#user-name"),
-        userEmail = $("#user-email"),
-        msgSubject = $("#msg-subject"),
+        userPhone = $("#user-phone"),
+        userAddress = $("#user-address"),
         msgText = $("#msg-text"),
         submitBtn = $("#submit-btn");
 
@@ -376,9 +376,9 @@ $(function () {
         e.preventDefault();
 
         ValidateNotEmptyInput(userName, "Please Enter Your Name");
-        ValidateNotEmptyInput(userEmail, "Please Enter Your Email");
-        ValidateNotEmptyInput(msgSubject, "Please Enter Your subject");
-        ValidateNotEmptyInput(msgText, "Please Enter Your Message");
+        ValidateNotEmptyInput(userPhone, "Please Enter Your Phone number");
+        ValidateNotEmptyInput(userAddress, "Please Enter Your Address");
+        ValidateNotEmptyInput(msgText, "Please Enter A Description");
         validateEmailInput(userEmail);
 
 
