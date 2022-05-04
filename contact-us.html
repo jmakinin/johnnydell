@@ -152,34 +152,34 @@
               </div>
               <div class="custom-form-area input-boxed"> 
                 <!--Form To have user messages-->
-                <form class="main-form" id="contact-us-form" action="" method="post"><span class="done-msg"></span>
+                <form class="main-form" id="contact-us-form" action="phpmailer-config/mail.send.php" method="post"><span class="done-msg"></span>
                   <div class="row ">
                     <div class="col-12 col-lg-6">
                       <div class="   input-wrapper">
-                        <input class="text-input" id="user-name" name="UserName" type="text"/>
+                        <input class="text-input" id="user-name" name="_name" type="text"/>
                         <label class="input-label" for="user-name"> Name <span class="req">*</span></label><span class="b-border"></span><span class="error-msg"></span>
                       </div>
                     </div>
                     <div class="col-12 col-lg-6">
                       <div class="   input-wrapper">
-                        <input class="text-input" id="user-phone" name="phone" type="text"/>
+                        <input class="text-input" id="user-phone" name="_phone" type="text"/>
                         <label class="input-label" for="phone"> Phone <span class="req">*</span></label><span class="b-border"></span><span class="error-msg"></span>
                       </div>
                     </div>
                     <div class="col-12 ">
                       <div class="   input-wrapper">
-                        <input class="text-input" id="user-address" name="address" type="text"/>
+                        <input class="text-input" id="user-address" name="_address" type="text"/>
                         <label class="input-label" for="msg-subject"> Address <span class="req">*</span></label><span class="b-border"></span><span class="error-msg"></span>
                       </div>
                     </div>
                     <div class="col-12 ">
                       <div class="   input-wrapper">
-                        <textarea class=" text-input" id="details" name="message"></textarea>
+                        <textarea class=" text-input" id="details" name="_message"></textarea>
                         <label class="input-label" for="msg-text"> What would you like us to clean </label><span class="b-border"></span><i></i><span class="error-msg"></span>
                       </div>
                     </div>
                     <div class="col-12 submit-wrapper">
-                      <button class=" btn-solid" id="submit-btn" type="submit" name="UserSubmit">Send your message</button>
+                      <button class=" btn-solid"  type="submit" name="UserSubmit">Send your message</button>
                     </div>
                   </div>
                 </form>
