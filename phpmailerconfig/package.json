@@ -1,0 +1,26 @@
+{
+  "name": "plesk-server-phpmailer-config",
+  "version": "1.0.0",
+  "description": "email service configuration for plesk host edition server, use on smtp enabled",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/makinin-dotcom/plesk-server-phpmailer-config.git"
+  },
+  "keywords": [
+    "PHP",
+    "PHPMailer",
+    "config",
+    "Plesk",
+    "Server"
+  ],
+  "author": "Makinin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/makinin-dotcom/plesk-server-phpmailer-config/issues"
+  },
+  "homepage": "https://github.com/makinin-dotcom/plesk-server-phpmailer-config#readme"
+}
