@@ -1,36 +1,4 @@
 @charset "UTF-8";
-/*** LTR websites ***/
-/*===================================================
-Project: Cleanso - Cleaning Services Company HTML5 Template
-Auther: aminThemes
-Version: 1.0
-Last change: 29 September 2021
-Template Description: Cleaning Services Company HTML5 Template
-====================================================*/
-/*==
-- global-rules and helper classes
-- page-header
-- page-hero 
-- services
-- about 
-- portfolio 
-- portfolio-single  
-- our-team 
-- our-clients 
-- faq 
-- testimonials 
-- contact-us 
-- take-action 
-- page-footer 
-- blog
-- 404 Page
-- benefits 
-- pricing
-- stats
-- shop
-- demos page
-- Dark Theme Rules
-===*/
 /* start global, helper classes , Components Rules*/
 /*========== Start Global Rules ==========*/
 .line, .line-on-side, .sec-heading .bottom-line, .sec-heading.centered .bottom-line {
@@ -4837,7 +4805,7 @@ body.rounded-btns .field-group .label {
 
 .portfolio-single .main-area .project-text {
   position: relative;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 1.25rem;
   opacity: .75;
@@ -9105,5 +9073,4 @@ body.dark-theme .about .about-stats.stats-cards .stat-box {
   background: #000531;
 }
 
-/*    End dark theme rules  */
 /*# sourceMappingURL=main-LTR.css.map */
