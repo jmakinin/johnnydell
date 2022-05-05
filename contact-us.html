@@ -33,6 +33,8 @@
         <link rel="stylesheet" href="css/vendors/vegas.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;500;600;700;800;900&amp;display=swap">
         <link rel="stylesheet" href="css/main-LTR.css">
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
   </head>
   <body class="   rounded-btns ">
    <header class="header-2 " id="page-header">
@@ -54,7 +56,7 @@
                     <div class="info">
                       <div class="info-icon"><i class="bi bi-geo-alt icon"></i></div>
                       <div class="info-text">
-                        <p class="text"> 531 Kingsland Road, Dalstan Junction, <br> Hackney E8 4AR </p>
+                        <p class="text"> 531 Kingsland Road, Dalstan Junction, Hackney E8 4AR </p>
                       </div>
                     </div>
                     <div class="info">
@@ -195,8 +197,14 @@
                         <label class="input-label" for="msg-text"> What would you like us to clean </label><span class="b-border"></span><i></i><span class="error-msg"></span>
                       </div>
                     </div>
+                    <div class="col-12 ">
+                      <div class="   input-wrapper">
+                        <div class="g-recaptcha" data-sitekey="6LeOEcgfAAAAAFyQ4ol5HpICDaVUcc6W9YajLLzY"></div>
+                      </div>
+                    </div>
+                    
                     <div class="col-12 submit-wrapper">
-                      <button class=" btn-solid"  type="submit" name="UserSubmit">Send your message</button>
+                       <br><br><button class=" btn-solid"  type="submit" name="UserSubmit">Send your message</button>
                     </div>
                   </div>
                 </form>
