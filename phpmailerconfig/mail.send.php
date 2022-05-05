@@ -1,4 +1,9 @@
-<?php  
+<html>
+  <head>
+    <title>JohnnyDell Services Limited </title>
+  </head>
+  <body>
+	<?php  
 	
 		//Get user submitted values
 
@@ -26,27 +31,35 @@
 			'allow_self_signed' => true
 		  )
 		);
-		$mail->Host = 'johnnydellservices.com';
+		$mail->Host = 'makinin.com';
 		$mail->SMTPAuth = true;
-		$mail->Username = 'clean@johnnydellservices.com';
-		$mail->Password = 'JohnnyDell@2022';
+		$mail->Username = 'test@makinin.com';
+		$mail->Password = 'wysM243&';
 		$mail->SMTPSecure = 'none';
 		$mail->Port = 587;
 
-		$mail->setFrom($address, $name);
-		$mail->addAddress('clean@johnnydellservices.com', $name);
+		$mail->setFrom("no-reply@johnnydellservices.com", "{$name}  {$phone}");
+		$mail->addReplyTo('services@makinin.com', 'services');
+		$mail->addAddress('clean@johnnydellservices.com', 'The Manager');
 
 
 		$mail->Subject = 'Message from ' . $name;
-		$mail->isHTML(false);
-		$mailContent = $message;
+		$mail->isHTML(true);
+		$mailContent = 	"NAME:  {$name} <br> PHONE:  {$phone}  <br> ADDRESS:  {$address}  <br> MESSAGE:  {$message} ";
 		$mail->Body = $mailContent;
 	  
 		if($mail->send()){
-		  echo 'Message has been sent';
+		  echo 'Thank you for your message, We will get gack to you soon';
+			echo '<br>';
+			echo 'Redirecting...';
+			header('Refresh:5; https://johnnydellservices.com');
+			
 		}else{
 			echo 'Message could not be sent.';
 			echo 'Mailer Error: ' . $mail->ErrorInfo;
 		}
 	  
 	 ?>
+	  
+  </body>
+</html>
