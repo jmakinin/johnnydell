@@ -2973,7 +2973,7 @@ body.rounded-btns .field-group .label {
 
 @media (max-width: 991px) {
   .page-hero .hero-text-area .hero-subtitle, .hero-swiper-slider .slide-subtitle {
-    font-size: 1rem;
+    font-size: 1.35rem;
   }
 }
 
