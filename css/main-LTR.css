@@ -228,6 +228,18 @@ section {
   }
 }
 
+@media (max-width: 575px){
+  .m-b-padding{
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px){
+  .m-b-padding{
+    padding-bottom: 30px;
+  }
+}
+
 .sec-heading .subtitle {
   margin: 0 auto;
   margin-bottom: 1.25rem;
