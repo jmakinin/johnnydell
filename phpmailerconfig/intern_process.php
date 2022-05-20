@@ -1,3 +1,8 @@
+<html>
+  <head>
+    <title>JohnnyDell Services Limited </title>
+  </head>
+  <body>
 
 	<?php  
 	
@@ -45,8 +50,8 @@
 		$mail->Port = 587;
 
 		$mail->setFrom("no-reply@johnnydellservices.com", "{$fullname}  {$phone}");
-		$mail->addReplyTo('services@makinin.com', 'services');
-		$mail->addAddress('clean@johnnydellservices.com', 'The Manager');
+		$mail->addReplyTo('services@johnnydellservices.com', 'services');
+		$mail->addAddress('corporate@johnnydellservices.com', 'The Manager');
 
 
 		$mail->Subject = 'Internship Request from ' . $fullname;
@@ -60,10 +65,10 @@
 		$mail->Body = $mailContent;
 	  
 		if($mail->send()){
-		  echo 'Thank you, We will get gack to you soon';
+		  echo '<h2>Thank you, We will get gack to you soon</h2>';
 			echo '<br>';
-			echo 'Redirecting...';
-			header('Refresh:5; https://johnnydellservices.com');
+			echo '<h2>Redirecting...</h2>';
+			header('Refresh:4; https://johnnydellservices.com');
 			
 		}else{
 			echo 'Message could not be sent.';
@@ -72,3 +77,5 @@
 	  
 	 ?>
 	 
+  </body>
+</html>
