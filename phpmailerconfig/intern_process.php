@@ -49,7 +49,7 @@
 		$mail->addAddress('clean@johnnydellservices.com', 'The Manager');
 
 
-		$mail->Subject = 'Message from ' . $fullname;
+		$mail->Subject = 'Internship Request from ' . $fullname;
 		$mail->isHTML(true);
 		$mailContent = "NAME:  {$fullname} <br> 
 						PHONE:  {$phone} <br> 

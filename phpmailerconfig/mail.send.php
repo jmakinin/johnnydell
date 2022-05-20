@@ -43,9 +43,13 @@
 		$mail->addAddress('clean@johnnydellservices.com', 'The Manager');
 
 
-		$mail->Subject = 'Message from ' . $name;
+		$mail->Subject = 'Cleaning Request from ' . $name;
 		$mail->isHTML(true);
-		$mailContent = 	"NAME:  {$name} <br> PHONE:  {$phone}  <br> ADDRESS:  {$address}  <br> MESSAGE:  {$message} ";
+		$mailContent = 	"NAME:  {$name} <br> 
+										 PHONE:  {$phone}  <br> 
+										 ADDRESS:  {$address}  <br> 
+										 MESSAGE:  {$message} ";
+
 		$mail->Body = $mailContent;
 	  
 		if($mail->send()){
