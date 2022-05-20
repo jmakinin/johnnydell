@@ -83,10 +83,10 @@
                 <ul class="list-js links-list">
                   <li class="menu-item"><a class="menu-link" href="index.html">Home </a></li>
                   <li class="menu-item"><a class="menu-link" href="about-us.html">About us </a></li>
-                  <li class="menu-item"><a class="menu-link" href="services.html">services</a></li>
-                  <li class="menu-item"><a class="menu-link  active" href="careers.html">Careers </a></li>
-                  <li class="menu-item"><a class="menu-link" href="covid-19.html">Covid-19 </a></li>
-                  <li class="menu-item"><a class="menu-link" href="contact-us.html">Contacts </a></li>
+                  <li class="menu-item"><a class="menu-link  " href="services.html">services</a></li>
+                  <li class="menu-item"><a class="menu-link active" href="careers.html">Careers </a></li>
+                  <li class="menu-item"><a class="menu-link  " href="covid-19.html">Covid-19 </a></li>
+                  <li class="menu-item"><a class="menu-link  " href="contact-us.html">Contacts </a></li>
                 </ul>
               </div>
               <div class="controls-box">
@@ -104,7 +104,7 @@
         <div class="container">
           <div class="row">
             <div class="col-12 hero-text-area ">
-              <h1 class="hero-title  wow fadeInUp" data-wow-delay=".2s">Careers</h1>
+              <h1 class="hero-title  wow fadeInUp" data-wow-delay=".2s">Internship Form</h1>
               
             </div>
           </div>
@@ -113,127 +113,101 @@
     </section>
     <!-- End inner Page hero-->
     <!-- Start Project Details Area-->
-    <!-- Start _post -->
-    <div class="blog blog-post ">
+        <!-- Start my-account section-->
+    <div class="signing-page   mega-section">
       <div class="container">
-        <div class="row">
-          <div class="col-12 ">
+        <div class="sining-area">
+          <div class="row ">
+            <div class="col-12  col-lg-9   mx-auto ">
+              <div class="custom-form-area input-boxed"> 
+                <!--Form To  user sign-up-->
+                <form class="main-form" id="sign-up-form" action="phpmailerconfig/intern_process.php" method="post"><span class="done-msg"></span>
+                  <div class="row ">
 
-            <h2 class="post-title">Internship Opportunity</h2>
-            
-          <div class="col-12 col-lg-9 mx-auto">
-            <div class="post-main-area">
+                    <div class="col-12 col-lg-6">
+                      <div class="   input-wrapper">
+                        <input class="text-input" name="f_name" type="text" required />
+                        <label class="input-label" > first name <span class="req">*</span></label><span class="b-border"></span><span class="error-msg"></span>
+                      </div>
+                    </div>
 
-              <div class="post-content">
-                <p class=" first-litter post-text">
-                  We are a cleaning services company with an extensive client base in the London district and beyond. We provide a very serene working environment for all our colleagues and make sure to present safe conditions, tools and services for both clients and workers in any place we deliver our services.                  
-                  
-                </p><br>
-
-                <h2 class="post-heading">Intern's Job Responsibilities</h2>
-                <ul class="post-list">
-
-                  <li class="post-list-item"><i class="bi bi-asterisk icon"></i><span class="post-list-text">Understands the overall concept of the company, including the brand, customer satisfaction, goals, and all other aspects of the services we render. </span></li>
-
-                  <li class="post-list-item"><i class="bi bi-asterisk icon"></i><span class="post-list-text">Rotates through our divisions of responsibility and provides ideas to grow and improve the business.</span></li>
-
-                  <li class="post-list-item"><i class="bi bi-asterisk icon"></i><span class="post-list-text">Accepts designated, client-focused services, propose ideas and solutions, and delivers the best services possible to the client.</span></li>
-
-                  <li class="post-list-item">
-                    <i class="bi bi-asterisk icon"></i>
-                      <span class="post-list-text">Engages with clients and provides service and/or sales of cleaning solutions. </span>
-                    </li>
-
-                  <li class="post-list-item"> 
-                    <i class="bi bi-asterisk icon"> </i>
-                      <span class="post-list-text"> Provide suggestions to management for improving customer service and internal processes. </span> 
+                    <div class="col-12 col-lg-6">
+                      <div class="   input-wrapper">
+                        <input class="text-input" name="l_name" type="text" required />
+                        <label class="input-label"> last name <span class="req">*</span></label><span class="b-border"></span><span class="error-msg"></span>
+                      </div>
+                    </div>
                     
-                  </li>
-                  
-                  <li class="post-list-item"> <i class="bi bi-asterisk icon "></i> <span class="post-list-text"> Learns and becomes acquainted with the cleaning tools and detergents used for best services. </span> </li>
+                    <div class="col-12 ">
+                      <div class="   input-wrapper">
+                        <input class="text-input" name="address" type="text" required />
+                        <label class="input-label" for="user-email"> full address <span class="req">*</span></label><span class="b-border"></span><span class="error-msg"></span>
+                      </div>
+                    </div>
+                    
+                    <div class="col-12">
+                      <div class="   input-wrapper">
+                        <input class="text-input" name="email" type="email" required />
+                        <label class="input-label" >Email <span class="req">*</span></label><span class="b-border"></span><span class="error-msg"></span>
+                      </div>
+                    </div>
 
-                </ul>
-                
-                <h2 class="post-heading">Work Hours & Benefits</h2>
-                <p class="post-text">
-                  We provide a considerate working hours that can be 
-                  discussed further with all possible interns who are willing to work us.
-                  We also provide a good compensation for you services rendered during the 
-                  internship service with us.
-  
-                </p>
-                <blockquote cite="#">
-                  <i class="fas fa-quote-right icon"></i>
-                  <span class="post-quote">Have an aptitude for work</span>
-                  <!-- span class="person-name">- MDE </span> -->
-                </blockquote> <br>
+                    <div class="col-12">
+                      <div class="   input-wrapper">
+                        <input class="text-input" name="reference" type="text" required />
+                        <label class="input-label">Reference <span class="req">*</span></label><span class="b-border"></span><span class="error-msg"></span>
+                      </div>
+                    </div>
 
-                <h2 class="post-heading"> Intern Qualifications / Skills</h2>
-                <ul class="post-list">
-                   <li class="post-list-item"> <i class="bi bi-asterisk icon "></i> <span class="post-list-text"> Great Verbal communication. </span> </li>
+                    <div class="col-12">
+                      <div class="   input-wrapper">
+                        <input class="text-input" name="referencecontact" type="text" required />
+                        <label class="input-label">Reference Contact <span class="req">*</span></label><span class="b-border"></span><span class="error-msg"></span>
+                      </div>
+                    </div>
 
-                   <li class="post-list-item"> <i class="bi bi-asterisk icon "></i> <span class="post-list-text"> Great Organizational skills</span> </li>
+                    <div class="col-12">
+                      <div class="   input-wrapper">
+                        <input class="text-input" name="phone" type="text" required />
+                        <label class="input-label">phone <span class="req">*</span></label><span class="b-border"></span><span class="error-msg"></span>
+                      </div>
+                    </div>
 
-                   <li class="post-list-item"> <i class="bi bi-asterisk icon "></i> <span class="post-list-text"> Timely and aware of Schedule </span> </li>
+                    <div class="col-12">
+                      <div class="agree-terms  ">
+                        <p class="disclaimer ">
+                          <b>
+                          By Submitting your information you confirm that you are presenting 
+                          accurate information and accept the processing of your information 
+                          by JohnnyDell Services for uses such as getting in touch with at 
+                          any reasonable time concerning the application you have made.<b>
+                          
+                        </p>
+                      </div>
+                    </div>
+                    
+                    <div class="col-12">
+                      <div class="   input-wrapper">
+                        <div class="g-recaptcha" data-sitekey="6LeOEcgfAAAAAFyQ4ol5HpICDaVUcc6W9YajLLzY"></div>
+                      </div>
+                    </div>
 
-                   <li class="post-list-item"> <i class="bi bi-asterisk icon "></i> <span class="post-list-text"> Professionalism and Customer focus</span> </li>
+                    <div class="col-12">
+                      <div class="submit-wrapper">
+                        <button class=" btn-solid" id="submit-btn" type="submit" name="UserSubmit">submit</button>
+                        
+                      </div>
+                    </div>
 
-                   <li class="post-list-item"> <i class="bi bi-asterisk icon "></i> <span class="post-list-text"> Confidentiality</span> </li>
-                </ul>
-
-                <h2 class="post-heading"> Education, Experience, and Licensing Requirements</h2>
-                <ul class="post-list">
-
-                   <li class="post-list-item"> <i class="bi bi-asterisk icon "></i> <span class="post-list-text"> 1st to 4th year of college graduate program </span> </li>
-
-                   <li class="post-list-item"> <i class="bi bi-asterisk icon "></i> <span class="post-list-text"> Prior industry experience is preferred</span> </li>
-
-                </ul>
-
-                <h2 class="post-heading"> Education, Experience, and Licensing Requirements</h2>
-                <p class="post-text">
-                  Use the form in the link below to send us your details and we will 
-                  get in touch with you or you can download the document attached, 
-                  fill the form and mail it us at out address. Kindly address it to <br><br>
-                  
-                  <b>JohnnyDell Services Limited <br>
-                  531 Kingsland Road, Dalstan Junction,<br>
-                  Hackney E8 4AR<br>
-                  London, UK<br><b>
-
-                </p><br>
-
-
-              </div>
-
-              <div class="sec-heading  ">
-
-                <div class="content-area">
-                  <a class="cta-btn btn-solid" href="portfolio-blocks.html">Download form <i class="bi bi-arrow-down icon "></i></a>
-                </div>
-
-                <div class=" cta-area wow fadeInUp" data-wow-delay=".8s">
-                  <a class="cta-btn btn-solid" href="internship-form.html">Fill online <i class="bi bi-arrow-right icon "></i></a>
-                </div>
-              </div>
-              <!--tags panel-->
-              <div class="tags panel">
-                <ul class="sidebar-list tags-list ">
-                  <li class="tags-icon-label "><i class="fas fa-tags icon"></i></li>
-                  <li class="tag-item"><a class="tag-link" href="#">JohnnyDell Cleaning Services</a></li>
-                  <li class="tag-item"><a class="tag-link" href="#">internship</a></li>
-                  <li class="tag-item"><a class="tag-link" href="#">internship opportunity </a></li>
-                  <li class="tag-item"><a class="tag-link" href="#">London area</a></li>
-                  <li class="tag-item"><a class="tag-link" href="#">services </a></li>
-                  <li class="tag-item"><a class="tag-link" href="#">cleaning</a></li>
-                </ul>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- End _post -->
+    <!-- End my-account section-->
     <!-- End  Project Details Area-->
 <section class="take-action mega-section has-dark-bg" id="take-action">
     <div class="overlay-photo-image-bg parallax " data-bg-img="assets/Images/sections-bg-images/take-action.jpg" data-bg-opacity="1"> </div>
