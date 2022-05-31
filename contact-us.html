@@ -33,8 +33,9 @@
         <link rel="stylesheet" href="css/vendors/vegas.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;500;600;700;800;900&amp;display=swap">
         <link rel="stylesheet" href="css/main-LTR.css">
-        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-                <!-- Global site tag (gtag.js) - Google Analytics -->
+        <!-- Google Recaptcha API -->
+      <script src="https://www.google.com/recaptcha/api.js?render=6Le5vTIgAAAAACMxz6Fu8mlU2ESfW_i797Kb0cjN"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-228581821-1">
         </script>
         <script>
@@ -136,7 +137,7 @@
         <div class="row">
           <div class="col-12 col-lg-5  mx-auto  mb-5 mb-lg-0 wow fadeInUp  " data-wow-delay="0.4s">
             <div class=" contact-info-panel">
-              <div class="overlay-pattern-image-bg " data-bg-img="assets/Images/sections-bg-images/pattern-bg.jpg" data-bg-opacity=".25"></div>
+              <div class="overlay-pattern-image-bg " data-bg-opacity=".25"></div>
               <div class="overlay-color"></div>
               <div class="info-section ">
                 <div class="info-panel"><i class="bi bi-geo-alt icon"></i>
@@ -194,6 +195,7 @@
                   <div class="row ">
                     <div class="col-12 col-lg-6">
                       <div class="   input-wrapper">
+              <input type="hidden" id="tgon" name="tgon"/>
                         <input class="text-input" id="user-name" name="_name" required type="text"/>
                         <label class="input-label" for="user-name"> Name <span class="req">*</span></label><span class="b-border"></span><span class="error-msg"></span>
                       </div>
@@ -216,11 +218,11 @@
                         <label class="input-label" for="msg-text"> What would you like us to clean </label><span class="b-border"></span><i></i><span class="error-msg"></span>
                       </div>
                     </div>
-                    <div class="col-12 ">
+                    <!-- <div class="col-12 ">
                       <div class="   input-wrapper">
                         <div class="g-recaptcha" data-sitekey="6LeOEcgfAAAAAFyQ4ol5HpICDaVUcc6W9YajLLzY"></div>
                       </div>
-                    </div>
+                    </div> -->
                     
                     <div class="col-12 submit-wrapper">
                        <br><br><button class=" btn-solid"  type="submit" name="UserSubmit">Send your message</button>
@@ -235,7 +237,7 @@
     </section>
     <!-- End contact-us -->
   <footer class="page-footer dark-color-footer" id="page-footer">
-    <div class="overlay-photo-image-bg" data-bg-img="assets/Images/sections-bg-images/pattern-bg.jpg" data-bg-opacity=".075"></div>
+    <div class="overlay-photo-image-bg" data-bg-opacity=".075"></div>
     <div class="container">
       <div class="row footer-cols">
         <div class="col-12 col-md-8 col-lg-4  footer-col wow fadeInUp " data-wow-delay="0.3s"><img class="img-fluid footer-logo" loading="lazy" src="assets/Images/logo/logo-light.png" alt="logo"/>
@@ -321,5 +323,13 @@
         <script src="js/vendors/simpleParallax.min.js"></script>
         <script src="js/vendors/wow.min.js"></script>
         <script src="js/main.js"></script>
+      <script>
+        grecaptcha.ready(function() {
+          grecaptcha.execute('6Le5vTIgAAAAACMxz6Fu8mlU2ESfW_i797Kb0cjN', {action: 'submit'}).then(function(token) {
+            document.getElementById("tgon").value=token;
+          });
+        });
+      
+      </script>
   </body>
 </html>

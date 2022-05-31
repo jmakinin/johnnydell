@@ -35,6 +35,8 @@
         <link rel="stylesheet" href="css/vendors/swiper-bundle.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;500;600;700;800;900&amp;display=swap">
         <link rel="stylesheet" href="css/main-LTR.css">
+    <!-- Google Recaptcha API -->
+      <script src="https://www.google.com/recaptcha/api.js?render=6Le5vTIgAAAAACMxz6Fu8mlU2ESfW_i797Kb0cjN"></script>
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-228581821-1">
         </script>
@@ -146,6 +148,7 @@
                     <div class="col-12 col-lg-6">
                       <div class="   input-wrapper">
                         <input class="text-input" name="f_name" type="text" required />
+              <input type="hidden" name="iton" id="iton"/>
                         <label class="input-label" > first name <span class="req">*</span></label><span class="b-border"></span><span class="error-msg"></span>
                       </div>
                     </div>
@@ -328,5 +331,13 @@
         <script src="js/vendors/simpleParallax.min.js"></script>
         <script src="js/vendors/wow.min.js"></script>
         <script src="js/main.js"></script>
+    <script>
+        grecaptcha.ready(function() {
+          grecaptcha.execute('6Le5vTIgAAAAACMxz6Fu8mlU2ESfW_i797Kb0cjN', {action: 'submit'}).then(function(token) {
+            document.getElementById("iton").value=token;
+          });
+        });
+      
+      </script>
   </body>
 </html>
